@@ -2,6 +2,15 @@
 
 Tailwindcss + Flask
 
+This project is an example of how to use Tailwindcss with Flask.
+
+All CSS changes are made in the CSS file found in the `tailwindcss/` folder.
+
+When the `uv run qwe dev` command is run, it starts the flask server and the
+tailwindcss/cli process.
+
+The compiled CSS file is output to `app/static/compiled.css`.
+
 # Windows Environment Setup
 
 **Using PowerShell**
