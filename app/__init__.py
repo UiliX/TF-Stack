@@ -1,7 +1,7 @@
 from flask import Flask
-
 from flask_imp import Imp
-from flask_imp.config import ImpConfig, FlaskConfig
+
+from app.config import IMP_CONFIG, FLASK_CONFIG
 
 
 def create_app():
@@ -11,13 +11,9 @@ def create_app():
         static_folder="static",
         template_folder="templates",
     )
+    app.config.from_object(FLASK_CONFIG.as_object())
 
-    FlaskConfig(
-        secret_key="02f65a5c46cf19b06833ad85cc7eab5f3d87e5c91164325f",
-        app_instance=app
-    )
-
-    imp = Imp(app, ImpConfig())
+    imp = Imp(app, IMP_CONFIG)
     imp.import_resources()
 
     return app
