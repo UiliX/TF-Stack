@@ -1,4 +1,5 @@
 # The following commands show when running `uv run qwe`
+setup_tailwindcss = "*:npm i"
 dev = [
     "*:flask --debug run --port 5049",
     "*:npx @tailwindcss/cli -i ./tailwindcss/_main_.css -o ./app/static/compiled.css --watch"
