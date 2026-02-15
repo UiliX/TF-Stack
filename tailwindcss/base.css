@@ -1,0 +1,37 @@
+body, html {
+    @apply
+    bg-gray-800
+    text-white
+    ;
+}
+
+body {
+    @apply
+    flex
+    flex-col
+    items-center
+    ;
+}
+
+code {
+    @apply
+    bg-gray-700
+    p-1
+    rounded
+    ;
+}
+
+.header-content {
+    @apply
+    mb-2
+    p-6
+    ;
+}
+
+
+.main-content {
+    @apply
+    mb-2
+    p-6
+    ;
+}

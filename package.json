@@ -1,0 +1,13 @@
+{
+  "name": "tf-stack",
+  "version": "1.0.0",
+  "description": "Tailwindcss + Flask",
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "flowbite": "^4.0.1",
+    "tailwindcss": "^4.1.18"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask-Imp</title>
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧚</text></svg>">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='compiled.css')|uncache }}">
+
+    <script>
+        // inline script
+    </script>
+
+</head>
+
+<body>
+<main class="w-2xl">
+    <section class="header-content">
+        <h1 class="text-7xl">Flask-Imp 🧚</h1>
+    </section>
+    <section class="main-content">
+        <div>
+            <p class="mb-0">
+                This template page is located in
+                <code>app/templates/index.html</code><br/>
+                with its route defined in
+                <code>app/resources/routes.py</code><br/><br/>
+                It's being imported by <code>app.import_resources()</code>
+                in the <code>app/__init__.py</code> file.
+            </p>
+        </div>
+    </section>
+</main>
+</body>
+
+</html>

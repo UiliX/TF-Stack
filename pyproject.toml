@@ -1,0 +1,25 @@
+[project]
+name = "tf-stack"
+version = "0.1.0"
+description = "Tailwindcss + Flask"
+requires-python = ">=3.13"
+dependencies = [
+    "flask-imp>=6.0.3",
+    "pyqwe>=3.1.1",
+]
+
+[project.optional-dependencies]
+production = [
+    "gunicorn>=25.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.1",
+]
+
+[tool.ruff]
+src = ["app"]
+fix = true
+show-fixes = true
+output-format = "full"
