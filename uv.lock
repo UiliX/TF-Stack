@@ -50,7 +50,7 @@ wheels = [
 
 [[package]]
 name = "flask-imp"
-version = "6.0.3"
+version = "6.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -58,9 +58,9 @@ dependencies = [
     { name = "flask-sqlalchemy" },
     { name = "more-itertools" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/95/92/ca8dd7f037e33249cee8008c0e4f65eea9ac96156234cc0478077dbc897c/flask_imp-6.0.3.tar.gz", hash = "sha256:44a09ce7bb4ad2ceed1c8c1c36c3c4603dbfe16e06ddaf8b6ca47041ade2a99f", size = 137225 }
+sdist = { url = "https://files.pythonhosted.org/packages/53/de/1d06f9d8af42b3edf1e234ad1decbcd29b1b5f8eafaaf1319ac94b4eedb2/flask_imp-6.4.0.tar.gz", hash = "sha256:735544125cce21500acfc8beb1c48d21830cc4fde4f0d7e509b6edf0700a0126", size = 142033 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/aa/2a/479f0848c75d791a9912c05b0b11447782c1110aa8ababa47878784faf49/flask_imp-6.0.3-py3-none-any.whl", hash = "sha256:28bd0946c90f691e247df2a010e37b26faaf1b8b6679df930238601789ddf7bc", size = 55507 },
+    { url = "https://files.pythonhosted.org/packages/cb/7e/c3b72f7fed726cdcf8f1de384d8d94cb5d84ce77cf134e21f0678bfa9246/flask_imp-6.4.0-py3-none-any.whl", hash = "sha256:3c021fa939620e9b3042318c7e292a7b3f8bfe1e063b961e8f43694f15280478", size = 57489 },
 ]
 
 [[package]]
@@ -214,12 +214,34 @@ wheels = [
 ]
 
 [[package]]
-name = "pyqwe"
-version = "3.1.1"
+name = "pyhead"
+version = "6.1.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8e/a8/1f91c7f9978d0e048f6274a4364afea3a59b8a12d9853c1030d5ca6c6b30/pyqwe-3.1.1.tar.gz", hash = "sha256:cd15296357aa9a29d557afb709e45197c83c645c6e5d0a3aefd2ad23fab1a23e", size = 30392 }
+dependencies = [
+    { name = "click" },
+    { name = "markupsafe" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/12/80/99e1182af742452d4bdf5922577f3642b64f35d22727aaa88c66193c2000/pyhead-6.1.0.tar.gz", hash = "sha256:3a7a5ecd653c3d715bef5d2afb74a63484d174a6459f0189594a517a870cb8ab", size = 68670 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/ae/634d8de87598558d0cc6ace26d59b109859d76272affd16aec77f7638804/pyqwe-3.1.1-py3-none-any.whl", hash = "sha256:b6ed8693d1a135125b49c83709256bd832133c21e936de5e6b2a65a6ed1e412d", size = 11720 },
+    { url = "https://files.pythonhosted.org/packages/8a/20/0b48ebaec0501f483b55adc7d918b0ea8ff26b10a86aa4da15c995f20390/pyhead-6.1.0-py3-none-any.whl", hash = "sha256:8e7e463a26c61bf13879ab25c950d64a5da63f5257dc60572628b75e78fe7a9a", size = 32047 },
+]
+
+[[package]]
+name = "pyqwe"
+version = "3.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/f1/624cbe1df2ec5093674cff9f494d1c5621afc26b0e474bd24c99f076289b/pyqwe-3.1.2.tar.gz", hash = "sha256:40e720d28b5e25ef8211915f753b4d4503bb01392f61490848091ec1fd87a1d9", size = 51697 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/35/9c/718e82343f18cba8d0f2d4ad3d02a824898710740d76b0b7206d1d9b1702/pyqwe-3.1.2-py3-none-any.whl", hash = "sha256:d56196d6eaf2e9d59009eb61d632d8270ddf673d9c093e3d60b00e6aa4104670", size = 11849 },
+]
+
+[[package]]
+name = "python-dotenv"
+version = "1.2.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/ed/0301aeeac3e5353ef3d94b6ec08bbcabd04a72018415dcb29e588514bba8/python_dotenv-1.2.2.tar.gz", hash = "sha256:2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3", size = 50135 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a", size = 22101 },
 ]
 
 [[package]]
@@ -288,7 +310,9 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "flask-imp" },
+    { name = "pyhead" },
     { name = "pyqwe" },
+    { name = "python-dotenv" },
 ]
 
 [package.optional-dependencies]
@@ -303,9 +327,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "flask-imp", specifier = ">=6.0.3" },
+    { name = "flask-imp", specifier = ">=6.4.0" },
     { name = "gunicorn", marker = "extra == 'production'", specifier = ">=25.1.0" },
-    { name = "pyqwe", specifier = ">=3.1.1" },
+    { name = "pyhead", specifier = ">=6.1.0" },
+    { name = "pyqwe", specifier = ">=3.1.2" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
 
 [package.metadata.requires-dev]

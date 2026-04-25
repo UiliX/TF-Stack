@@ -1,7 +1,9 @@
 from flask_imp.config import ImpConfig, FlaskConfig
 
+from app.globals import FLASK_SECRET_KEY
+
 FLASK_CONFIG = FlaskConfig(
-    secret_key="02f65a5c46cf19b06833ad85cc7eab5f3d87e5c91164325f",
+    secret_key=FLASK_SECRET_KEY,
 )
 
 # ImpConfig usually handles database configs

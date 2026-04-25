@@ -4,8 +4,10 @@ version = "0.1.0"
 description = "Tailwindcss + Flask"
 requires-python = ">=3.13"
 dependencies = [
-    "flask-imp>=6.0.3",
-    "pyqwe>=3.1.1",
+    "flask-imp>=6.4.0",
+    "pyhead>=6.1.0",
+    "pyqwe>=3.1.2",
+    "python-dotenv>=1.2.2",
 ]
 
 [project.optional-dependencies]
